@@ -18,7 +18,7 @@ export function PostDetail(props) {
 
   useEffect(() => {
     postId && getPost(postId).then((res) => setPost(res));
-  }, []);
+  }, [postId]);
 
   useEffect(() => {
     if (post) {
