@@ -1,0 +1,29 @@
+@import '../../styles/settings/settings';
+
+
+.row {
+  display: flex;
+  margin-bottom: 0.5rem;
+  @include small-only {
+    display: block;
+  }
+}
+
+.name {
+  margin-right: 2rem;
+  font-weight: 700;
+}
+
+.email {
+  color: $medium-gray;
+}
+
+.flex {
+  display: flex;
+
+}
+
+.order {
+  font-size: 2rem;
+  margin-right: 1rem;
+}

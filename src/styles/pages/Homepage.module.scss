@@ -1,0 +1,23 @@
+@import '../settings/settings';
+
+.wrapper {
+  margin: 3rem 4rem 2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  
+  @include medium-down {
+    margin: 1rem 2rem;
+    grid-template-columns: auto;
+  }
+}
+
+.card {
+  margin: 0.5rem;
+  border: 1px solid $light-gray;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}

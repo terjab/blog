@@ -1,0 +1,74 @@
+@import '../settings/settings';
+
+.wrapper {
+  margin: 3rem 6rem 3rem 12rem;
+  @include medium-down {
+    margin: 1rem;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $dark-gray;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header {
+  font-size: 4rem;
+  @include medium-down {
+    font-size: 1.4rem;
+  }
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  @include medium-down {
+    display: block;
+  }
+}
+
+.author {
+  border-top: 1px solid $light-gray;
+  padding: 1rem 2rem 1rem 0;
+
+  .subheader {
+    font-size: 0.9rem;
+    color: $medium-gray;
+    font-weight: 800;
+    font-style: italic;
+  }
+}
+
+.full-text {
+  margin-left: 3rem;
+  & > * {
+    padding-bottom: 0.5rem;
+  }
+  @include medium-down {
+    margin: 0;
+  }
+}
+
+.h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: $medium-gray;
+}
+
+.comment {
+  margin-bottom: 2rem;
+}
+
+.comments {
+  .comment {
+    &:nth-child(2n) {
+      padding: 0.5rem 1rem;
+      background-color: $lightest-gray;
+      border-radius: 3px;
+    }
+  }
+}
