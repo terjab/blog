@@ -9,10 +9,10 @@ export const Card = ({ post, authors, comments }) => {
   const [filteredComments, setfilteredComments] = useState();
 
   useEffect(() => {
-    if (post && comments) {
+    if (post) {
       setfilteredComments(findAllOccurrences(comments, post.id));
     }
-  }, [post]);
+  }, [post, comments]);
 
   return (
     <>
